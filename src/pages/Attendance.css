@@ -1,0 +1,140 @@
+.attendance-page {
+  padding: 20px;
+  background: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.attendance-page h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon {
+  color: #4a90e2;
+}
+
+.attendance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.attendance-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.attendance-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.card-icon {
+  font-size: 22px;
+  color: #4a90e2;
+}
+
+.card-content {
+  font-size: 15px;
+  color: #555;
+}
+
+.metric {
+  margin-bottom: 10px;
+}
+
+.metric .value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2d89ef;
+}
+
+.metric .label {
+  font-size: 13px;
+  color: #777;
+}
+
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.log-table th, .log-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.log-table th {
+  background: #f0f3f6;
+  color: #444;
+}
+
+.status {
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.status.ontime {
+  background: #e6f7e6;
+  color: #2e7d32;
+}
+
+.status.late {
+  background: #fff4e5;
+  color: #d84315;
+}
+
+.action-btn {
+  padding: 10px 15px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.action-btn:hover {
+  background: #357ab8;
+}
+
+.action-btn.secondary {
+  background: #ff9800;
+}
+
+.action-btn.secondary:hover {
+  background: #f57c00;
+}
+
+.flex-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}

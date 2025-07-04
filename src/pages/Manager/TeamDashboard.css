@@ -1,0 +1,138 @@
+/* TeamDashboard.css */
+.team-dashboard {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fc;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.header .icon {
+  font-size: 28px;
+  color: #4e73df;
+}
+
+.header h2 {
+  font-size: 24px;
+  color: #343a40;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-icon {
+  font-size: 28px;
+  color: #36b9cc;
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.stat-card p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.search-bar {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #999;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.search-bar input:focus {
+  border-color: #4e73df;
+}
+
+.team-table {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.team-table h3 {
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+.team-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.team-table th,
+.team-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.team-table th {
+  background: #f1f3f7;
+  color: #555;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.status.present {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.leave {
+  background: #f8d7da;
+  color: #721c24;
+}

@@ -1,0 +1,256 @@
+.travel-portal {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.travel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 20px;
+}
+
+.travel-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.request-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-size: 15px;
+}
+
+.request-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.request-btn:active {
+  transform: translateY(0);
+}
+
+.travel-tabs {
+  display: flex;
+  border-bottom: 1px solid #e1e4e8;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #7f8c8d;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  color: #3498db;
+}
+
+.tab-btn.active {
+  color: #3498db;
+  font-weight: 500;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #3498db;
+}
+
+.trips-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.trip-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.trip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.trip-icon {
+  font-size: 24px;
+  color: #3498db;
+  padding: 15px;
+  background: #f0f7fc;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trip-details {
+  flex: 1;
+}
+
+.trip-details h3 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.trip-details p {
+  margin: 6px 0;
+  color: #7f8c8d;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.trip-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.status.approved {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status.pending-approval {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.budget {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.policies-list {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.policies-list h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.policies-list ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.policies-list li {
+  margin-bottom: 12px;
+  color: #34495e;
+  line-height: 1.5;
+}
+
+.quick-links {
+  margin-top: 30px;
+}
+
+.quick-links h4 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.link-item {
+  margin-bottom: 20px;
+}
+
+.external-link {
+  background: none;
+  border: none;
+  color: #3498db;
+  padding: 0;
+  margin: 0 0 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
+
+.external-link svg {
+  font-size: 14px;
+}
+
+.link-desc {
+  display: block;
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-left: 24px;
+}
+
+@media (max-width: 768px) {
+  .travel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .travel-tabs {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .tab-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .trips-list {
+    grid-template-columns: 1fr;
+  }
+}

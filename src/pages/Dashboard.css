@@ -1,0 +1,74 @@
+.employee-portal {
+  padding: 2rem;
+  background: #f4f7fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-content {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.metric-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.metric-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.metric-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.metric-icon {
+  font-size: 28px;
+  margin-right: 12px;
+}
+
+.metric-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+
+.metric-value.highlight {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.metric-icon.leave {
+  color: #f39c12;
+}
+.metric-icon.attendance {
+  color: #27ae60;
+}
+.metric-icon.payslip {
+  color: #2980b9;
+}
+.metric-icon.training {
+  color: #8e44ad;
+}

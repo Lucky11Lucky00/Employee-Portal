@@ -1,0 +1,109 @@
+.performance-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9fb;
+  min-height: 100vh;
+}
+
+.performance-title {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.icon-title {
+  margin-right: 10px;
+  color: #4e73df;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user-icon {
+  font-size: 28px;
+  color: #4e73df;
+  margin-right: 12px;
+}
+
+.designation {
+  font-size: 14px;
+  color: #777;
+}
+
+.progress-label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.star {
+  font-size: 18px;
+  color: #ccc;
+  margin-right: 2px;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.rating-score {
+  margin-left: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.feedback {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.feedback-icon {
+  margin-right: 6px;
+  color: #4e73df;
+}
