@@ -1,0 +1,9 @@
+/* src/pages/Login.css */
+.login-container {
+  text-align: center;
+  padding: 2rem;
+}
+video {
+  border: 3px solid green;
+  border-radius: 12px;
+}
